@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["Pichanokk.github.io"],
+    domains: ["Pichanokk.netlify.app"],
   },
 };

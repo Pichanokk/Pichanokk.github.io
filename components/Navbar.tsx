@@ -28,7 +28,8 @@ const Navbar = () => {
 
    //later
    useEffect(() => {
-      if (pathname === '/projects') setActive('Projects')
+      if (pathname === '/') setActive('About')
+      else if (pathname === '/projects') setActive('Projects')
       else if (pathname === '/profile') setActive('Profile')
    }, [])
 
@@ -39,6 +40,12 @@ const Navbar = () => {
          </span>
 
          <div className='text-base font-normal md:text-xl'>
+         <NavItem
+               active={active}
+               setActive={setActive}
+               name='About'
+               route='/'
+            />
             <NavItem
                active={active}
                setActive={setActive}
